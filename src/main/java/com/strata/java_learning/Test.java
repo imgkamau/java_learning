@@ -16,11 +16,19 @@ public class Test {
     //void - This method does not return anything.
     public static void main(String[] args) {
         // TODO code application logic here
-        String name = Test.getName();
+        /* String name = Test.getName(); calling a method with a return.
         System.out.println("Hello " + name);
+         */
+        String inputDate = "2022-04-09";
+        String inputFormat = "yyyy-MM-dd";
+        String outputFormat = "dd/MM/yyyy";
+        //Utilities util = new Utilities(); //instantiating a non-static class - creating an object for that class.
+        //String formattedDate = util.manipulateDateFormat(inputDate, inputFormat, outputFormat);
+        String formattedDate = Utilities.manipulateDateFormat(inputDate, inputFormat, outputFormat);
+        System.out.println("Formatted Date: " + formattedDate);
     }
 
-    public static String getName(){
+    public static String getName() {
         String name = "George";
         return name;
     }
