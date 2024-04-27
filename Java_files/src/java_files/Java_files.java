@@ -4,6 +4,7 @@
  */
 package java_files;
 
+import java.io.File;
 import java.util.Arrays;
 
 /**
@@ -17,6 +18,12 @@ public class Java_files {
      */
     public static void main(String[] args) {
 
+        
+        JavaIo.readFiles();
+        JavaIo.readPropertiesFile("C:\\Users\\Admin\\Desktop\\data.properties");
+        File fv = new File("C:\\Users\\Admin\\Desktop");
+        
+        JavaIo.traverseDirectory(fv);
         //ARRAYS 
         // TODO code application logic here
         //an array can be any data type. - called collections in Java.
